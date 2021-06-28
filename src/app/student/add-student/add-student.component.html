@@ -1,0 +1,41 @@
+<div class="container">
+  <h1 class="text-center text-muted mb-2" *ngIf="studentService.student.id==null">Add New Student</h1>
+  <h1 class="text-center text-muted mb-2" *ngIf="studentService.student.id!=null">Update Student</h1>
+
+  <div class="alert alert-success " *ngIf="msg">
+    <strong>{{msg}}</strong> 
+    <button type="button" class="btn btn-sm btn-danger mr-0" (click)="dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<div class="row mb-2">
+
+<div class="col-md-12">
+
+<form (ngSubmit)="saveStudent()">
+
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="studentService.student.name" name="name" placeholder="Enter Name">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="studentService.student.city" name="city" placeholder="enter City">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control"  [(ngModel)]="studentService.student.course" name="course" placeholder="Enter Course">
+      </div>
+
+      <button type="submit" class="btn btn-sm btn-primary btn-block">
+        <span *ngIf="studentService.student.id==null">Submit</span>
+        <span *ngIf="studentService.student.id!=null">Update</span>
+
+      </button>
+
+</form>
+
+
+</div>
+
+</div>
+</div>

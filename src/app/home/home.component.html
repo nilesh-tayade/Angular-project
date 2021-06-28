@@ -1,0 +1,40 @@
+<div class="container-fluid">
+
+    
+    <h1 class="text-center text-muted mb-2">This is User list</h1>
+    
+    <div class="alert alert-success " *ngIf="msg">
+      <strong>{{msg}}</strong> 
+      <button type="button" class="btn btn-sm btn-danger">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <table class="table table-sm table-hover mb-2">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile No</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <th >{{user.id}}</th>
+            <td>{{user.empname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mobileno}}</td>
+            <td> <button class="btn btn-sm btn-primary m-2" ><i class="fa fa-edit"></i></button>  </td>
+            <td> <button class="btn btn-sm btn-danger m-2"  ><i class="fa fa-trash"></i></button></td>
+
+          </tr>
+         
+        </tbody>
+      </table>
+
+  
+
+
+
+    </div>

@@ -1,0 +1,37 @@
+{
+    "user" :[
+
+    {
+        "id":1,
+      "empname":"Nilesh Tayade",
+      "email":"nilesh@gmail.com",
+      "mobileno":"7744886807",
+      "designation":"Developer",
+      "username":"nilesh123",
+      "password" :"12345"
+    },
+    {
+        "id":2,
+      "empname":"Anilet Dhaigude",
+      "email":"aniket@gmail.com",
+      "mobileno":"98264464646",
+      "designation":"Developer",
+      "username":"aniket123",
+      "password" :"12345"
+    },
+    {
+        "id":3,
+      "empname":"Mahesh Sukalkar",
+      "email":"mahesh@gmail.com",
+      "mobileno":"7749826465",
+      "designation":"Developer",
+      "username":"mahesh123",
+      "password" :"12345"
+    }
+   
+
+]
+
+
+
+}
